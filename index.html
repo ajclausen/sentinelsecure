@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SentinelSecure - Coming Soon</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/ajclausen/sentinelsecure/main/favicon.ico" type="image/x-icon">
     <style>
         body, html {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: #1A1A2E; /* Dark blue-purple background for contrast */
+            background: #1A1A2E;
             color: #ffffff;
             height: 100%;
             overflow: hidden;
@@ -28,12 +29,12 @@
         .logo {
             width: 400px;
             height: auto;
-            filter: drop-shadow(0 0 20px rgba(143, 43, 188, 0.5)); /* Glow matching logo color */
+            filter: drop-shadow(0 0 20px rgba(143, 43, 188, 0.5));
         }
         #countdown {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            background: rgba(143, 43, 188, 0.2); /* Slight purple tint */
+            background: rgba(143, 43, 188, 0.2);
             padding: 1rem 2rem;
             border-radius: 50px;
         }
@@ -41,6 +42,24 @@
             font-size: 2rem;
             margin-bottom: 3rem;
             font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 60px;
+                justify-content: flex-start;
+            }
+            .logo {
+                width: 80%;
+                max-width: 300px;
+            }
+            .tagline {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            #countdown {
+                font-size: 2rem;
+                padding: 0.8rem 1.5rem;
+            }
         }
     </style>
 </head>
