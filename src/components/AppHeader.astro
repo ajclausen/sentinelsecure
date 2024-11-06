@@ -1,6 +1,7 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
 import Container from "./Container.astro";
+import ThemeToggle from "./ThemeToggle.astro";
 import { button, ghostButton, outlinedButton } from "@tailus/themer-button"
 import {cn} from "@lib/utils"
 import Frame from "./Frame.astro";
@@ -32,6 +33,7 @@ const links = [
                     <BrandLogo />
 
                     <div class="relative flex max-h-10 items-center lg:hidden">
+                        <ThemeToggle />
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6">
                             <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
                             <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
@@ -58,6 +60,7 @@ const links = [
                         </Frame>
                     </div>
                     <div class="w-full my-6 border-t dark:border-[--ui-dark-border-color] pt-6 lg:mt-0 flex gap-2 lg:my-0 lg:border-none lg:pt-0">
+                        <ThemeToggle class="hidden lg:flex" />
                         <a href="/login" class={cn(ghostButton.gray.sm, "hidden lg:flex")}>
                             Sign In
                         </a>

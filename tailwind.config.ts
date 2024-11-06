@@ -6,6 +6,7 @@ export default {
         './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
         "./node_modules/@tailus/themer-**/dist/**/*.{js,ts}"
     ],
+    darkMode: 'class', // Add this line
     theme: {
         extend: {
             colors: {
